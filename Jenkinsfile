@@ -9,7 +9,7 @@ pipeline {
 
     stage('Enviando mensagem') {
       steps {
-        mail(subject: '[Jenkins] Iniciando esta pipeline', body: 'Iniciando a pipeline do testePratica5', replyTo: 'gabriel0603@alu.ufc.br', to: 'gabriel0603@alu.ufc.br')
+        mail(subject: '[Jenkins] Pipeline Pratica 5', body: 'Iniciando a pipeline do testePratica5', replyTo: 'gabriel0603@alu.ufc.br', to: 'gabriel0603@alu.ufc.br')
       }
     }
 
@@ -17,7 +17,7 @@ pipeline {
       steps {
         sleep 15
         build(propagate: true, job: 'UnicornTest')
-        mail(subject: 'Iniciando teste', body: 'Estamos fazendo um teste', to: 'gabriel.raulino@alu.ufc.br')
+        mail(subject: 'Iniciando teste', body: 'Prática 5 concluída', to: 'gabriel.raulino@alu.ufc.br')
       }
     }
 
