@@ -17,7 +17,7 @@ pipeline {
       steps {
         sleep 15
         build(propagate: true, job: 'UnicornTest')
-        mail(subject: 'Iniciando teste', body: 'Pr·tica 5 concluÌda', to: 'gabriel.raulino@alu.ufc.br')
+        mail(subject: 'Iniciando teste', body: 'Pr√°tica 5 conclu√≠da', to: 'gabriel.raulino@alu.ufc.br')
       }
     }
 
